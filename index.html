@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        head,body{
+            height: 100%;
+            width: 100%;
+            background-color:black;
+        }
+
+        form{
+            margin-left: 5%;
+            margin-top: 5%;
+            padding: 1%;
+            border: 2px solid black;
+            background-color: black;
+            text-align: center;
+            height: 50%;
+            width: 21%;
+            text-align: end;
+            box-shadow: 0 0 10px white, 0 0 20px white,0 0 40px white;
+    
+     
+        }
+
+        #button{
+            font-size: 150%;
+            padding: 2%;
+            color: white;
+            background-color: black;
+            box-shadow: 0 0 5px white, 0 0 10px white,0 0 20px white;
+            position: relative;
+            top: 50%;
+            left: 50%;
+        }
+        h1{
+            margin-left: 40%;
+            padding-top: 1%;
+            color: tan;
+
+        }
+        h2{
+            color: white;
+        }
+ 
+ 
+
+    </style>
+</head>
+<body>
+    <h1>TODO APPLICATION</h1>
+     <form action="/FormHandle" method="GET">
+
+         <h2>ADD TASK</h2>
+        T_id:<input type="number" name="T_id" placeholder="Enter id" required>
+        <br><br>
+
+    
+        T_name:<input type="text" name="T_name" placeholder="Enter title name" required>
+        <br><br>
+
+         
+        T_description:<input type="text" name="T_description" placeholder="Enter description" required>
+        <br><br>
+
+        <button type="submit">submit</button>
+
+        <br><br><br><br>
+
+     </form>
+
+
+     <a id="button" href="/seealltask"><button>SEE ALL TASK</button></a>
+     
+</body>
+</html>
